@@ -1,34 +1,38 @@
 # 面板相关代码
+
+## 升级系统
+### centos
+```
+yum update
+```
+### debian/ubuntu
+```
+apt update
+```
+### 提示/boot/grub/grub.conf 找不到
+```
+yum install -y grub
+grub-mkconfig -o /boot/grub/grub.conf
+```
+### 提示/boot/grub2/grub.cfg 找不到
+```
+yum install -y grub2
+grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+## 开启VPS第三方ssh登录
+### centos
+```
+sed -i 's/PermitRootLogin no/PermitRootLogin yes/g' /etc/ssh/sshd_config
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+```
+### debian/ubuntu
+```
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+```
+
 ## 关闭防火墙
 ```
 rm -f /etc/iptables/rules.v4
 rm -f /etc/iptables/rules.v6
 ```
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/advast/xui/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
