@@ -103,3 +103,13 @@ x-ui update           # 更新 x-ui 面板
 x-ui install          # 安装 x-ui 面板
 x-ui uninstall        # 卸载 x-ui 面板
 ```
+### 忘记用户名和密码
+使用以下命令重置用户名和密码，默认都为 admin
+```
+/usr/local/x-ui/x-ui resetuser
+```
+### 面板设置修改错误导致面板无法启动
+使用以下命令重置所有面板设置，默认面板端口修改为 54321，其它的也会重置为默认值，注意，这个命令不会重置用户名和密码。
+```
+/usr/local/x-ui/x-ui resetconfig
+```
