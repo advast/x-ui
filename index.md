@@ -11,12 +11,12 @@ apt update
 ```
 ### 提示/boot/grub/grub.conf 找不到
 ```
-yum install -y grub
+apt install -y grub
 grub-mkconfig -o /boot/grub/grub.conf
 ```
 ### 提示/boot/grub2/grub.cfg 找不到
 ```
-yum install -y grub2
+apt install -y grub2
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 ## 执行bbr加速脚本
