@@ -1,20 +1,28 @@
 # 面板相关代码
 ## 前期准备
-### 获取root权限
+### 修改时间
+#### 获取root权限
 ```
 sudo -i
 ```
-### 查看服务器时间
+#### 查看服务器时间
 ```
 date
 ```
-### 修改时间
+#### 修改时区
 ```
-date -s "YYYY-MM-DD hh:mm:ss"（字符串）
+sudo tzselect
 ```
-### 时间持久化
+选择 亚洲Asia;
+继续选择 中国China;
+最后选择 北京Beijing.
+#### 创建时区软链
 ```
-hwclock -w
+sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
+#### 重启
+```
+reboot
 ```
 ### 升级系统
 #### centos
