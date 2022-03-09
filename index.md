@@ -113,7 +113,7 @@ x-ui uninstall        # 卸载 x-ui 面板
 ```
 /usr/local/x-ui/x-ui resetconfig
 ```
-### Clsah的TUN模式设置在配置文件添加以下内容
+### Clsah打开[TUN模式](https://docs.cfw.lbyczf.com/contents/tun.html)需要在配置文件添加以下内容
 ```
 dns:
   enable: true
