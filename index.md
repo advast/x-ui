@@ -43,6 +43,10 @@ rm -f /etc/iptables/rules.v4
 rm -f /etc/iptables/rules.v6
 ```
 ## 修改密码
-`passwd`
+```
+passwd
+```
 ## 重启
-`reboot`
+```
+reboot
+```
