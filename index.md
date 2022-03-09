@@ -16,9 +16,10 @@ sudo tzselect
 选择 亚洲Asia;
 继续选择 中国China;
 最后选择 北京Beijing.
+或者在Asia后直接选择 Singapore
 #### 创建时区软链
 ```
-sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+sudo ln -sf /usr/share/zoneinfo/Asia/Singapore /etc/localtime
 ```
 #### 重启
 ```
