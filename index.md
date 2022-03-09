@@ -75,3 +75,19 @@ passwd
 ```
 reboot
 ```
+## X-ui面板部署和卸载
+### X-ui面板部署
+```
+bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+```
+### X-ui面板卸载
+```
+systemctl stop x-ui
+systemctl disable x-ui
+rm /usr/local/x-ui/ -rf
+rm /etc/x-ui/ -rf
+rm /etc/systemd/system/x-ui.service -f
+systemctl daemon-reload
+```
+
+
