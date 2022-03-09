@@ -1,12 +1,9 @@
 面板类相关代码
 
-You can use the [editor on GitHub](https://github.com/advast/xui/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### 关闭防火墙
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+rm -f /etc/iptables/rules.v4
+rm -f /etc/iptables/rules.v6
 
 ```markdown
 Syntax highlighted code block
