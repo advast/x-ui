@@ -75,7 +75,7 @@ passwd
 ```
 reboot
 ```
-## X-ui面板部署和卸载
+## X-ui面板
 ### X-ui面板部署
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
@@ -89,5 +89,17 @@ rm /etc/x-ui/ -rf
 rm /etc/systemd/system/x-ui.service -f
 systemctl daemon-reload
 ```
-
-
+### X-ui面板其它操作
+```
+x-ui                  # 显示管理菜单 (功能更多)
+x-ui start            # 启动 x-ui 面板
+x-ui stop             # 停止 x-ui 面板
+x-ui restart          # 重启 x-ui 面板
+x-ui status           # 查看 x-ui 状态
+x-ui enable           # 设置 x-ui 开机自启
+x-ui disable          # 取消 x-ui 开机自启
+x-ui log              # 查看 x-ui 日志
+x-ui update           # 更新 x-ui 面板
+x-ui install          # 安装 x-ui 面板
+x-ui uninstall        # 卸载 x-ui 面板
+```
