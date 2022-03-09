@@ -1,7 +1,7 @@
 # 面板相关代码
 ## 关闭防火墙
-```rm -f /etc/iptables/rules.v4
-
+```
+rm -f /etc/iptables/rules.v4
 rm -f /etc/iptables/rules.v6
 ```
 
