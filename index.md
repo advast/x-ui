@@ -80,7 +80,7 @@ reboot
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 ```
-### X-ui面板卸载
+### X-ui面板完全卸载
 ```
 systemctl stop x-ui
 systemctl disable x-ui
