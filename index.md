@@ -19,6 +19,12 @@ grub-mkconfig -o /boot/grub/grub.conf
 yum install -y grub2
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
+## 执行bbr加速脚本
+```
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
+chmod +x tcp.sh
+./tcp.sh
+```
 ## 开启VPS第三方ssh登录
 ### centos
 ```
