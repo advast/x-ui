@@ -42,3 +42,7 @@ sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_
 rm -f /etc/iptables/rules.v4
 rm -f /etc/iptables/rules.v6
 ```
+## 修改密码
+`passwd`
+## 重启
+`reboot`
