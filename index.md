@@ -128,5 +128,5 @@ tun:
   dns-hijack:
     - 198.18.0.2:53 # 请勿更改
   auto-route: true
-  auto-detect-interface: true # 自动检测出口网卡
+  auto-detect-interface: true # 自动检测出口网卡 
 ```
