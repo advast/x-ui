@@ -130,3 +130,7 @@ tun:
   auto-route: true
   auto-detect-interface: true # 自动检测出口网卡 
 ```
+## Oracle Cloud 甲骨文云账号登入状态的账户角色管理
+```
+https://cloud.oracle.com/access-management/services/
+```
