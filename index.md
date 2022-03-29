@@ -30,6 +30,10 @@ reboot
 sudo iptables -F
 sudo iptables-save
 ```
+#### 重启
+```
+reboot
+```
 ### 升级系统
 #### centos
 ```
