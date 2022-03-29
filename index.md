@@ -25,6 +25,11 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Singapore /etc/localtime
 ```
 reboot
 ```
+### 清空iptables
+```
+sudo iptables -F
+sudo iptables-save
+```
 ### 升级系统
 #### centos
 ```
