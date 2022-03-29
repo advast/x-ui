@@ -1,10 +1,47 @@
 # 面板相关代码
 ## 前期准备
-### 修改时间
-#### 获取root权限
+### 获取root权限
 ```
 sudo -i
 ```
+### 清空iptables
+#### 清空现有规则
+```
+sudo iptables -F
+# 或者这个命令清空所有 groups
+iptables-save | awk '/^[*]/ { print $1 } 
+                 /^:[A-Z]+ [^-]/ { print $1 " ACCEPT" ; }
+                 /COMMIT/ { print $0; }' | iptables-restore
+```
+#### 添加下列规则
+```
+# add SSH port first
+iptables -I INPUT -p tcp --dport 22 -j ACCEPT		# ssh
+iptables -I INPUT -p tcp --dport 80 -j ACCEPT   	# http
+iptables -I INPUT -p tcp --dport 443 -j ACCEPT		# https
+iptables -I INPUT -p tcp --dport 3306 -j ACCEPT		# mysql
+
+# Set default chain policies
+iptables -P INPUT DROP
+iptables -P FORWARD DROP
+iptables -P OUTPUT ACCEPT
+
+# Accept on localhost
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+
+# Allow established sessions to receive traffic
+iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+```
+#### 保存配置
+```
+iptables-save > /etc/iptables/rules.v4
+```
+#### 重启
+```
+reboot
+```
+### 修改时间
 #### 查看服务器时间
 ```
 date
@@ -20,11 +57,6 @@ sudo tzselect
 #### 创建时区软链
 ```
 sudo ln -sf /usr/share/zoneinfo/Asia/Singapore /etc/localtime
-```
-### 清空iptables
-```
-sudo iptables -F
-sudo iptables-save
 ```
 #### 重启
 ```
