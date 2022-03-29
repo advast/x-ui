@@ -21,10 +21,6 @@ sudo tzselect
 ```
 sudo ln -sf /usr/share/zoneinfo/Asia/Singapore /etc/localtime
 ```
-#### 重启
-```
-reboot
-```
 ### 清空iptables
 ```
 sudo iptables -F
