@@ -20,6 +20,7 @@ iptables -I INPUT -p tcp --dport 22 -j ACCEPT		# ssh
 iptables -I INPUT -p tcp --dport 80 -j ACCEPT   	# http
 iptables -I INPUT -p tcp --dport 443 -j ACCEPT		# https
 iptables -I INPUT -p tcp --dport 3306 -j ACCEPT		# mysql
+iptables -I INPUT -p tcp --dport 8000 -j ACCEPT		# ajenti
 
 # Set default chain policies
 iptables -P INPUT DROP
