@@ -100,7 +100,7 @@ sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/ssh
 sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 ```
 
-### 关闭防火墙（iptables规则清空之后不要执行此命令）
+### 关闭防火墙（若iptables规则已清空，则不要执行此命令）
 ```
 rm -f /etc/iptables/rules.v4
 rm -f /etc/iptables/rules.v6
