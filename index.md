@@ -21,6 +21,9 @@ iptables -I INPUT -p tcp --dport 80 -j ACCEPT   	# http
 iptables -I INPUT -p tcp --dport 443 -j ACCEPT		# https
 iptables -I INPUT -p tcp --dport 3306 -j ACCEPT		# mysql
 iptables -I INPUT -p tcp --dport 8000 -j ACCEPT		# ajenti
+iptables -I INPUT -p tcp --dport 9997 -j ACCEPT		# xr
+iptables -I INPUT -p tcp --dport 9998 -j ACCEPT		# vm
+iptables -I INPUT -p tcp --dport 9999 -j ACCEPT		# tj
 
 # Set default chain policies
 iptables -P INPUT DROP
