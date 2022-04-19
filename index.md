@@ -176,3 +176,7 @@ tun:
 ```
 https://cloud.oracle.com/access-management/services/
 ```
+## 测速脚本
+```
+bash <(curl -Lso- https://git.io/superbench)
+```
