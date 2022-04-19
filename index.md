@@ -5,7 +5,7 @@
 sudo -i
 ```
 ### 清空iptables
-#### 清空现有规则
+#### 清空现有规则（常规安装失败才尝试此步骤）
 ```
 sudo iptables -F
 # 或者这个命令清空所有 groups
