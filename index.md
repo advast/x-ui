@@ -183,3 +183,7 @@ https://cloud.oracle.com/access-management/services/
 ```
 bash <(curl -Lso- https://git.io/superbench)
 ```
+## Netflix解锁检测
+```
+wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.52/nf_2.52_linux_amd64 && chmod +x nf && clear && ./nf
+```
