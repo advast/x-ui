@@ -16,10 +16,10 @@ iptables-save | awk '/^[*]/ { print $1 }
 #### 添加下列规则
 ```
 # add SSH port first
-iptables -I INPUT -p tcp --dport 21 -j ACCEPT		  # ftp
-iptables -I INPUT -p tcp --dport 22 -j ACCEPT		  # ssh
+iptables -I INPUT -p tcp --dport 21 -j ACCEPT		# ftp
+iptables -I INPUT -p tcp --dport 22 -j ACCEPT		# ssh
 iptables -I INPUT -p tcp --dport 80 -j ACCEPT   	# http
-iptables -I INPUT -p tcp --dport 1080 -j ACCEPT     # http
+iptables -I INPUT -p tcp --dport 1080 -j ACCEPT		# mysql
 iptables -I INPUT -p tcp --dport 443 -j ACCEPT		# https
 iptables -I INPUT -p tcp --dport 465 -j ACCEPT		# mail
 iptables -I INPUT -p tcp --dport 587 -j ACCEPT		# mail
