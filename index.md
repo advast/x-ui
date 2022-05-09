@@ -25,6 +25,7 @@ iptables -I INPUT -p tcp --dport 465 -j ACCEPT		# mail
 iptables -I INPUT -p tcp --dport 587 -j ACCEPT		# mail
 iptables -I INPUT -p tcp --dport 993 -j ACCEPT		# mail
 iptables -I INPUT -p tcp --dport 3306 -j ACCEPT		# mysql
+iptables -I INPUT -p tcp --dport 3389 -j ACCEPT		# remotedesktop
 iptables -I INPUT -p tcp --dport 8000 -j ACCEPT		# ajenti
 iptables -I INPUT -p tcp --dport 9000 -j ACCEPT		# panel
 iptables -I INPUT -p tcp --dport 9996 -j ACCEPT		# spare
