@@ -28,6 +28,7 @@ iptables -I INPUT -p tcp --dport 3306 -j ACCEPT		# mysql
 iptables -I INPUT -p tcp --dport 3389 -j ACCEPT		# remotedesktop
 iptables -I INPUT -p tcp --dport 8000 -j ACCEPT		# ajenti
 iptables -I INPUT -p tcp --dport 9000 -j ACCEPT		# panel
+iptables -I INPUT -p tcp --dport 9527 -j ACCEPT		# bot
 iptables -I INPUT -p tcp --dport 9996 -j ACCEPT		# spare
 iptables -I INPUT -p tcp --dport 9997 -j ACCEPT		# vmess
 iptables -I INPUT -p tcp --dport 9998 -j ACCEPT		# vless
