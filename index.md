@@ -97,6 +97,9 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 ### 执行bbr加速脚本
 ```
+apt update -y && apt install -y curl && apt install -y socat && apt install wget -y   
+```
+```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
 chmod +x tcp.sh
 ./tcp.sh
