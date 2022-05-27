@@ -188,6 +188,8 @@ https://cloud.oracle.com/access-management/services/
 ## 测速脚本
 ```
 bash <(curl -Lso- https://git.io/superbench)   
+```
+```
 wget -qO- bench.sh | bash
 ```
 ## Netflix解锁检测
