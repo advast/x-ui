@@ -201,6 +201,10 @@ wget -qO- bench.sh | bash
 ```
 ## Netflix解锁检测
 ```
+bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+```
+
+```
 wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.52/nf_2.52_linux_amd64 && chmod +x nf && clear && ./nf
 ```
 ```
