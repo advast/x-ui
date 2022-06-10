@@ -192,6 +192,10 @@ tun:
 ```
 https://cloud.oracle.com/access-management/services/
 ```
+## trojan脚本
+```
+bash <(curl -sSL "https://raw.githubusercontent.com/veip007/hj/main/trojan-go.sh")
+```
 ## 测速脚本
 ```
 bash <(curl -Lso- https://git.io/superbench)   
