@@ -192,10 +192,12 @@ tun:
 ```
 https://cloud.oracle.com/access-management/services/
 ```
-## trojan脚本
+## trojan-go 一键脚本(建议VPS的Nginx部署就位后安装trojan-go + ws)
 ```
 bash <(curl -sSL "https://raw.githubusercontent.com/veip007/hj/main/trojan-go.sh")
 ```
+静态伪装站点目录:    /usr/share/nginx/html
+trojan-go配置文件地址：    /etc/trojan-go/config.json
 ## 测速脚本
 ```
 bash <(curl -Lso- https://git.io/superbench)   
