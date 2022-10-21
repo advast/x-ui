@@ -196,7 +196,7 @@ https://cloud.oracle.com/access-management/services/
 ```
 bash <(curl -sSL "https://raw.githubusercontent.com/veip007/hj/main/trojan-go.sh")
 ```
-静态伪装站点目录:    /usr/share/nginx/html
+静态伪装站点目录:    /usr/share/nginx/html    
 trojan-go配置文件地址：    /etc/trojan-go/config.json
 ## 测速脚本
 ```
