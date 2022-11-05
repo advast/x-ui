@@ -205,6 +205,11 @@ bash <(curl -Lso- https://git.io/superbench)
 ```
 wget -qO- bench.sh | bash
 ```
+## BlueSkyXN 综合工具箱 
+```
+wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh 
+```
+
 ## Netflix解锁检测
 ```
 bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
